@@ -1,0 +1,299 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d3e3ff, #f4faff);
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #333;
+}
+
+/* Header / Navbar */
+header {
+    background-color: #4d6aff;
+    padding: 10px 30px;
+    box-shadow: 0 4px 12px rgba(77, 106, 255, 0.2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Left side */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #3348cc;
+}
+
+/* Right side */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.cart-icon:hover {
+    transform: scale(1.1);
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Account dropdown */
+.account-dropdown {
+    position: relative;
+}
+
+.account-btn {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.account-btn:hover {
+    background-color: white;
+    color: #3348cc;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 120%;
+    background-color: white;
+    color: #333;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(77, 106, 255, 0.2);
+    min-width: 120px;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.account-dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    transition: background 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f5ff;
+}
+
+/* Forms and Main Sections */
+main {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #4d6aff;
+}
+
+/* Footer */
+footer {
+    background-color: #4d6aff;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -5px 15px rgba(77, 106, 255, 0.3);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .nav-left, .nav-right {
+        gap: 15px;
+    }
+}
+
+/* Signup form box */
+form {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(77, 106, 255, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+/* Form title */
+form h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Labels & inputs */
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+form input:focus {
+    border-color: #4d6aff;
+    box-shadow: 0 0 6px rgba(77, 106, 255, 0.25);
+}
+
+/* Button */
+form button {
+    background-color: #4d6aff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #3348cc;
+    transform: translateY(-2px);
+}
+
+/* Login link */
+.login-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #555;
+}
+
+.login-link a {
+    color: #4d6aff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Password toggle */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 45px; /* space for the eye icon */
+}
+
+.password-wrapper .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #4d6aff;
+}

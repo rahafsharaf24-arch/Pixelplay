@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories | PixelPlay Store</title>
+    <link rel="stylesheet" href="../CSS/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+     <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="nav-left">
+                <h1 class="logo">PixelPlay</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="cart.html" class="cart-icon">🛒<span class="cart-count">2</span></a>
+                <div class="account-dropdown">
+                    <button class="account-btn">Account ⌄</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub Navigation for Categories -->
+        <!-- Sub-navigation -->
+        <nav class="sub-nav">
+            <a href="products-hoodies.html" class="sub-link">Hoodies</a>
+            <a href="products-tshirts.html" class="sub-link">T-Shirts</a>
+            <a href="products-phonecases.html" class="sub-link">Phone Cases</a>
+            <a href="products-accessories.html" class="sub-link">Accessories</a>
+        </nav>
+
+    </header>
+
+    <!-- Products Grid -->
+    <main class="products-grid">
+        <section class="product">
+            <img src="../images/access1.jpg" alt="Gamer Mug">
+            <h2>Pixel Pencil Case</h2>
+            <p>Durable pencil case with pixel art print for school or work.</p>
+            <span>$9.99</span>
+            <a href="./pencilcase.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/access2.jpg" alt="Pixel Keychain">
+            <h2>Pixel Keychain</h2>
+            <p>Retro keychain for your gaming gear.</p>
+            <span>$7.99</span>
+            <a href="./keychin.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/Mouse.jpg" alt="RGB Gaming Mouse">
+            <h2>RGB Gaming Mouse</h2>
+            <p>High-performance mouse with RGB lights.</p>
+            <span>$15.99</span>
+            <a href="./gamingmouse.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/access4.jpg" alt="Gamer Notebook">
+            <h2>Ergonomic Gaming Mouse</h2>
+            <p>High-precision mouse with customizable buttons for pro gamers.</p>
+            <span>$17.99</span>
+            <a href="./gamingmouse2.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/access3.jpg" alt="Headphones Stand">
+            <h2>RGB Gaming Keyboard</h2>
+            <p>Mechanical keyboard with vibrant RGB lighting and tactile keys.</p>
+            <span>$19.99</span>
+            <a href="./keyboard.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/access5.jpg" alt="Headphones Stand">
+            <h2>Ultimate Gaming Headset</h2>
+            <p>Surround sound headset with comfy ear cushions and crystal-clear audio.</p>
+            <span>$20.99</span>
+            <a href="./headset.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/access6.jpg" alt="Headphones Stand">
+            <h2>Wireless Gaming Earbuds</h2>
+            <p>Compact earbuds with low latency and immersive sound for gaming on the go.</p>
+            <span>$22.99</span>
+            <a href="./earbud.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/access7.jpg" alt="Headphones Stand">
+            <h2>Pixel PlayStation Controller Skin</h2>
+            <p>Protective and stylish skin for your PlayStation controller with pixel art design.</p>
+            <span>$15.99</span>
+            <a href="./playstation.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/stand.webp" alt="Headphones Stand">
+            <h2>Headphones Stand</h2>
+            <p>Keep your headphones safe and displayed.</p>
+            <span>$7.99</span>
+            <a href="./stand.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/keychain.jpg" alt="Headphones Stand">
+            <h2>Pixel Gamer Keychain</h2>
+            <p>Mini keychain with retro pixel design, perfect for backpacks or keys.</p>
+            <span>$5.99</span>
+            <a href="./keychin2.html" class="btn">View Details</a>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 PixelPlay. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+     <script>
+    const current = window.location.href;
+    const links = document.querySelectorAll('.sub-link');
+
+    links.forEach(link => {
+        if(current.includes(link.getAttribute('href'))) {
+            link.classList.add('active');
+        }
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPlay | Home</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="nav-container">
+            <div class="nav-left">
+                <h1 class="logo">PixelPlay</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact-us.html">contact-us</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="cart.html" class="cart-icon">🛒<span class="cart-count">2</span></a>
+                <div class="account-dropdown">
+                    <button class="account-btn">Account ⌄</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h1>Level Up Your Style!</h1>
+        <p>Exclusive gamer merch for the pixel warrior in you.</p>
+        <div class="color-options-container">
+            <div class="color-options">
+                <label><input type="checkbox" onclick="document.body.style.backgroundColor='#d3e3ff'"> Light
+                    Blue</label>
+                <label><input type="checkbox" onclick="document.body.style.backgroundColor='#4d6aff'">Dark Blue</label>
+            </div>
+            <a href="./products.html" class="btn hero-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown" style="text-align:center; margin:40px 0;">
+        <h2>⏳ Upcoming Sale!</h2>
+        <div id="countdown" style="font-size: 1.5rem; color: #ff4d4d; margin-top: 10px;"></div>
+    </section>
+
+    <!-- Shop by Category -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card" onclick="showCategory('hoodies')">Hoodies</div>
+            <div class="category-card" onclick="showCategory('tshirts')">T-Shirts</div>
+            <div class="category-card" onclick="showCategory('phonecases')">Phone Cases</div>
+            <div class="category-card" onclick="showCategory('accessories')">Accessories</div>
+        </div>
+    </section>
+
+    <!-- Featured Products (Newest) -->
+    <section id="featured-products" class="featured-products">
+        <h2>🔥 Ultimate Gamer Gear</h2>
+        <div>
+        <div class="product-card fade-in">
+            <img src="../images/hoodies 4.jpg" alt="Gamer Hoodie">
+            <h3>Pixel Hoodie</h3>
+            <p>$49.99</p>
+            <a href="./hoodies 4.html" class="btn">View</a>
+        </div>
+        <div class="product-card fade-in">
+            <img src="../images/access5.jpg" alt="Gaming Mouse">
+            <h3>Ultimate Headset </h3>
+            <p>$29.99</p>
+            <a href="./headset.html" class="btn">View</a>
+        </div>
+        <div class="product-card fade-in">
+            <img src="../images/Mouse.jpg" alt="Notebook">
+            <h3>RGB Mouse</h3>
+            <p>$9.99</p>
+            <a href="./gamingmouse.html" class="btn">View</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Category Sections -->
+    <section id="hoodies" class="category-section" style="display:none;">
+        <h2>Hoodies</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="../images/hoodies 2.jpg" alt="Hoodie 1">
+                <h3>Pixel Neon Hoodie</h3>
+                <p>$39.99</p>
+                <a href="./hoodies 2.html" class="btn">View</a>
+            </div>
+            <div class="product-card">
+                <img src="../images/hoodies 3.jpg" alt="Hoodie 2">
+                <h3>Pixel Warrior Hoodi</h3>
+                <p>$42.99</p>
+                <a href="./hoodies 3.html" class="btn">View</a>
+            </div>
+            <div class="product-card">
+                <img src="../images/hoodies 4.jpg" alt="Hoodie 3">
+                <h3>Retro Gamer Hoodie</h3>
+                <p>$44.99</p>
+                <a href="./hoodies 4.html" class="btn">View</a>
+            </div>
+            <div class="product-card">
+                <img src="../images/hoodies 5.jpg" alt="Hoodie 4">
+                <h3>Champion Hoodie</h3>
+                <p>$49.99</p>
+                <a href="./hoodies 5.html" class="btn">View</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tshirts" class="category-section" style="display:none;">
+        <h2>T-Shirts</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="../images/t-shirt 1.jpg" alt="T-Shirt 1">
+                <h3>Pixel Art Tee</h3>
+                <p>$18.99</p>
+                <a href="./tshirt2.html" class="btn">View</a>
+            </div>
+            <div class="product-card">
+                <img src="../images/t-shirt 2.jpg" alt="T-Shirt 2">
+                <h3>Retro Gamer Tee</h3>
+                <p>$17.55</p>
+                <a href="./tshirt3.html" class="btn">View</a>
+            </div>
+            <div class="product-card">
+                <img src="../images/t-shirt 3.jpg" alt="T-Shirt 3">
+                <h3>Level Up Tee</h3>
+                <p>$20.00</p>
+                <a href="./tshirt4.html" class="btn">View</a>
+            </div>
+            <div class="product-card">
+                <img src="../images/t-shirt 4.jpg" alt="T-Shirt 4">
+                <h3>Retro Console Tee</h3>
+                <p>$20.45</p>
+                <a href="./tshirt5.html" class="btn">View</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="phonecases" class="category-section" style="display:none;">
+        <h2>Phone Cases</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="../images/phone1.jpg" alt="Phone Case 1">
+                <h3>RGB Gamer Case</h3>
+                <p>$12.99</p>
+                <a href="./phonecase1.html" class="btn">View</a>
+            </div>
+            <div class="product-card">
+                <img src="../images/phone2.jpg" alt="Phone Case 2">
+                <h3>Retro Pixel Case</h3>
+                <p>$10.99</p>
+                <a href="./phonecase2.html" class="btn">View</a>
+            </div>
+            <div class="product-card">
+                <img src="../images/phone3.jpg" alt="Phone Case 3">
+                <h3>Neon Pixel Case</h3>
+                <p>$15.99</p>
+                <a href="./phonecase3.html" class="btn">View</a>
+            </div>
+            <div class="product-card">
+                <img src="../images/phone4.jpg" alt="Phone Case 4">
+                <h3>Level Up Case</h3>
+                <p>$12.55</p>
+                <a href="./phonecase4.html" class="btn">View</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="accessories" class="category-section" style="display:none;">
+        <h2>Accessories</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="../images/access1.jpg" alt="Accessory 1">
+                <h3>Pixel Pencil Case</h3>
+                <p>$9.99</p>
+                <a href="./pencilcase.html" class="btn">View</a>
+            </div>
+            <div class="product-card">
+                <img src="../images/access2.jpg" alt="Accessory 2">
+                <h3>Pixel Keychain</h3>
+                <p>$7.99</p>
+                <a href="./keychin.html" class="btn">View</a>
+            </div>
+            <div class="product-card">
+                <img src="../images/access3.jpg" alt="Accessory 3">
+                <h3>RGB Gaming Keyboard</h3>
+                <p>$19.99</p>
+                <a href="./keyboard.html" class="btn">View</a>
+            </div>
+            <div class="product-card">
+                <img src="../images/access4.jpg" alt="Accessory 4">
+                <h3>Ergonomic Gaming Mouse</h3>
+                <p>$17.99</p>
+                <a href="./gamingmouse2.html" class="btn">View</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="why-choose">
+        <h2>Why Choose PixelPlay?</h2>
+        <ul>
+            <li>Epic gamer merch and accessories</li>
+            <li>Fast shipping across all realms</li>
+            <li>Secure checkout with magical shields 🛡️</li>
+        </ul>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe for the latest drops and exclusive offers!</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 PixelPlay. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/content-change.js"></script>
+    <script src="../JS/effects.js"></script>
+    <script src="../JS/countdown.js"></script>
+
+</body>
+
+</html>

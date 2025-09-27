@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPlay | Checkout</title>
+    <link rel="stylesheet" href="../CSS/checkout.css" />
+    <link rel="stylesheet" href="../CSS/forms.css">
+    <!-- Import fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <!-- Left: Logo + Main links -->
+            <div class="nav-left">
+                <h1 class="logo">PixelPlay</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact-us.html">contact-us</a></li>
+                </ul>
+            </div>
+
+            <!-- Right: Cart + Account -->
+            <div class="nav-right">
+                <a href="cart.html" class="cart-icon">
+                    🛒<span class="cart-count">2</span>
+                </a>
+                <div class="account-dropdown">
+                    <button class="account-btn">Account ⌄</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Checkout Content -->
+    <main>
+        <div class="checkout-container">
+            <h2>Checkout</h2>
+
+            <!-- Product Summary -->
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="checkout-item">
+                    <p><strong>PixelPlay T-Shirt</strong></p>
+                    <p>Quantity: 1</p>
+                    <p>Price: $20</p>
+                </div>
+                <div class="checkout-item">
+                    <p><strong>RGB Gaming Mouse</strong></p>
+                    <p>Quantity: 1</p>
+                    <p>Price: $45</p>
+                </div>
+                <div class="checkout-total">
+                    <p><strong>Total: $65</strong></p>
+                </div>
+            </div>
+
+            <!-- Checkout Form -->
+            <form action="#" method="POST" class="checkout-form">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Your Player Tag" required />
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+
+                <label for="address">Shipping Address</label>
+                <input type="text" id="address" name="address" placeholder="123 Pixel Lane, Game City" required />
+
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="" disabled selected>Select your weapon</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="crypto">Crypto Coins</option>
+                </select>
+
+                <label for="cardnumber">Card Number</label>
+                <input type="text" id="cardnumber" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx" required />
+
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv" placeholder="***" maxlength="4" required />
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 PixelPlay. All rights reserved.</p>
+    </footer>
+    <script src="../JS/form-validation.js"></script>
+
+</body>
+
+</html>

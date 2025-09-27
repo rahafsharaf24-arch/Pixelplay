@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodies | PixelPlay Store</title>
+    <link rel="stylesheet" href="../CSS/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="nav-left">
+                <h1 class="logo">PixelPlay</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="cart.html" class="cart-icon">🛒<span class="cart-count">2</span></a>
+                <div class="account-dropdown">
+                    <button class="account-btn">Account ⌄</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub Navigation for Categories -->
+        <!-- Sub-navigation -->
+        <nav class="sub-nav">
+            <a href="products-hoodies.html" class="sub-link">Hoodies</a>
+            <a href="products-tshirts.html" class="sub-link">T-Shirts</a>
+            <a href="products-phonecases.html" class="sub-link">Phone Cases</a>
+            <a href="products-accessories.html" class="sub-link">Accessories</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Products Grid -->
+    <main class="products-grid">
+
+        <section class="product">
+            <img src="../images/hoodies 2.jpg" alt="Level Up Hoodie">
+            <h2>Pixel Neon Hoodie</h2>
+            <p>Bright neon pixel hoodie, perfect for night gaming.</p>
+            <span>$39.99</span>
+            <a href="./hoodies 2.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/hoodies 3.jpg" alt="Pixel Warrior Hoodie">
+            <h2>Pixel Warrior Hoodie</h2>
+            <p>Stylish Red hoodie with neon pixel warrior design.</p>
+            <span>$42.99</span>
+            <a href="./hoodies 3.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/hoodies 4.jpg" alt="Retro Gamer Hoodie">
+            <h2>Retro Gamer Hoodie</h2>
+            <p>Vintage print hoodie inspired by 80s arcade vibes.</p>
+            <span>$44.99</span>
+            <a href="./hoodies 4.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/hoodies 5.jpg" alt="Champion Hoodie">
+            <h2>Champion Hoodie</h2>
+            <p>Premium hoodie for eSports lovers with soft fleece.</p>
+            <span>$49.99</span>
+            <a href="./hoodies 5.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/hoodie.webp" alt="Pixel Neon Hoodie">
+            <h2>Level Up Hoodie</h2>
+            <p>Warm hoodie with “Level Up” front print.</p>
+            <span>$39.99</span>
+            <a href="./hoodie.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/hoodies 6.jpg" alt="Pixel Neon Hoodie">
+            <h2>Bit Champion Hoodie</h2>
+            <p>Stand out with this 8-bit inspired hoodie, designed for champions.</p>
+            <span>$35.99</span>
+            <a href="./hoodies 6.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/hoodies7.jpg" alt="Pixel Neon Hoodie">
+            <h2>Pixel Art Hoodie</h2>
+            <p>Soft hoodie featuring colorful pixel art designs for every gamer</p>
+            <span>$45.00</span>
+            <a href="./hoodies 7.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/hoodies8.jpg" alt="Pixel Neon Hoodie">
+            <h2>RGB Gamer Hoodie</h2>
+            <p>Hoodie with subtle RGB-style stripes for a modern gaming look.</p>
+            <span>$45.55</span>
+            <a href="./hoodies 8.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/hoodies9.jpg" alt="Pixel Neon Hoodie">
+            <h2>Pixel Camo Hoodie</h2>
+            <p>Camouflage hoodie with pixel pattern, perfect for casual wear.</p>
+            <span>$40.50</span>
+            <a href="./hoodies 9.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/hoodies10.jpg" alt="Pixel Neon Hoodie">
+            <h2>Retro Console Hoodie</h2>
+            <p>Show your love for classic consoles with this retro-inspired hoodie.</p>
+            <span>$42.44</span>
+            <a href="./hoodies 10.html" class="btn">View Details</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 PixelPlay. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script>
+    const current = window.location.href;
+    const links = document.querySelectorAll('.sub-link');
+
+    links.forEach(link => {
+        if(current.includes(link.getAttribute('href'))) {
+            link.classList.add('active');
+        }
+    });
+</script>
+
+</body>
+
+</html>

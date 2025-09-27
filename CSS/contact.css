@@ -1,0 +1,294 @@
+/* ==============================
+   Reset + Base Styles
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d3e3ff, #f4faff);
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==============================
+   Header & Navigation
+============================== */
+header {
+    background-color: #4d6aff;
+    padding: 10px 30px;
+    box-shadow: 0 4px 12px rgba(77, 106, 255, 0.2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* pushes nav-right to the right */
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #3348cc;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.cart-icon:hover {
+    transform: scale(1.1);
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.account-dropdown {
+    position: relative;
+}
+
+.account-btn {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.account-btn:hover {
+    background-color: white;
+    color: #3348cc;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 120%;
+    background-color: white;
+    color: #333;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(77, 106, 255, 0.2);
+    min-width: 120px;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.account-dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    transition: background 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f5ff;
+}
+
+/* ==============================
+   Hero Section
+============================== */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(120deg, #d3e3ff, #e6f0ff);
+}
+
+.hero h1 {
+    font-size: 2rem;
+    color: #3348cc;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ==============================
+   Contact Form & Map
+============================== */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1000px; /* made slightly wider */
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(77, 106, 255, 0.15);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 700px; /* increased from 500px */
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4d6aff;
+    box-shadow: 0 0 6px rgba(77, 106, 255, 0.25);
+}
+
+button {
+    background-color: #4d6aff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #3348cc;
+    transform: translateY(-2px);
+}
+
+.map-container {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(77, 106, 255, 0.2);
+}
+
+/* ==============================
+   Footer
+============================== */
+footer {
+    background-color: #4d6aff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -5px 15px rgba(77, 106, 255, 0.3);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* ==============================
+   Responsive Design
+============================== */
+@media (max-width: 900px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+    .contact-container {
+        padding: 20px 15px;
+    }
+    input, textarea {
+        font-size: 0.95rem;
+        padding: 10px 12px;
+    }
+    button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 14px;
+    }
+    footer {
+        font-size: 0.85rem;
+        padding: 15px;
+    }
+}

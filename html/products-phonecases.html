@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Cases | PixelPlay Store</title>
+    <link rel="stylesheet" href="../CSS/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+     <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="nav-left">
+                <h1 class="logo">PixelPlay</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="cart.html" class="cart-icon">🛒<span class="cart-count">2</span></a>
+                <div class="account-dropdown">
+                    <button class="account-btn">Account ⌄</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-navigation -->
+        <nav class="sub-nav">
+            <a href="products-hoodies.html" class="sub-link">Hoodies</a>
+            <a href="products-tshirts.html" class="sub-link">T-Shirts</a>
+            <a href="products-phonecases.html" class="sub-link">Phone Cases</a>
+            <a href="products-accessories.html" class="sub-link">Accessories</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Products Grid -->
+    <main class="products-grid">
+        
+        <section class="product">
+            <img src="../images/phone1.jpg" alt="PixelArt Phone Case">
+            <h2>RGB Gamer Case</h2>
+            <p>Sleek case with RGB-inspired pattern for your device.</p>
+            <span>$12.99</span>
+            <a href="./phonecase1.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/phone2.jpg" alt="PixelArt Phone Case">
+            <h2>Retro Pixel Case</h2>
+            <p>Classic pixel art design to protect your phone in style.</p>
+            <span>$10.99</span>
+            <a href="./phonecase2.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/phone3.jpg" alt="PixelArt Phone Case">
+            <h2>Neon Pixel Case</h2>
+            <p>Bright neon pixel graphics for a futuristic look.</p>
+            <span>$15.99</span>
+            <a href="./phonecase3.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/phone4.jpg" alt="PixelArt Phone Case">
+            <h2>Level Up Case</h2>
+            <p>Durable phone case with pixel designs.</p>
+            <span>$12.55</span>
+            <a href="./phonecase4.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/phone5.jpg" alt="PixelArt Phone Case">
+            <h2>Bit Adventure Case</h2>
+            <p>Take your phone on an 8-bit adventure with this stylish case.</p>
+            <span>$20.00</span>
+            <a href="./phonecase5.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/phone6.jpg" alt="PixelArt Phone Case">
+            <h2>Pixel Quest Case</h2>
+            <p>Embark on your pixel quest even when on the go.</p>
+            <span>$14.99</span>
+            <a href="./phonecase6.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/phone7.jpg" alt="PixelArt Phone Case">
+            <h2>Retro Console Case</h2>
+            <p>Protect your phone with a nod to classic gaming consoles.</p>
+            <span>$13.55</span>
+            <a href="./phonecase7.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/phone8.jpg" alt="PixelArt Phone Case">
+            <h2>Game Over Case</h2>
+            <p>Bold and protective case for serious gamers.</p>
+            <span>$25.00</span>
+            <a href="./phonecase8.html" class="btn">View Details</a>
+        </section>
+
+        <section class="product">
+            <img src="../images/phone9.jpg" alt="PixelArt Phone Case">
+            <h2>PixelArt Phone Case</h2>
+            <p>Durable phone case with pixel designs.</p>
+            <span>$14.99</span>
+            <a href="./phonecase9.html" class="btn">View Details</a>
+        </section>
+
+
+        <section class="product">
+            <img src="../images/phone10.jpg" alt="PixelArt Phone Case">
+            <h2>Gamer Life Case</h2>
+            <p>Subtle design that shows off your gamer lifestyle.</p>
+            <span>$22.00</span>
+            <a href="./phonecase10.html" class="btn">View Details</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 PixelPlay. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+     <script>
+    const current = window.location.href;
+    const links = document.querySelectorAll('.sub-link');
+
+    links.forEach(link => {
+        if(current.includes(link.getAttribute('href'))) {
+            link.classList.add('active');
+        }
+    });
+</script>
+
+
+</body>
+
+</html>
